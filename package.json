@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-starter",
+  "version": "1.0.0",
+  "description": "Tailwind based skeleton",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "postcss tailwind.css -o public/css/styles.css",
+    "watch": "postcss tailwind.css -o public/css/styles.css --watch"
+  },
+  "author": "Buddhika",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.0.0",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
