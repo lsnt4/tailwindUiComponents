@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindUiComponents ― Alerts</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="">
+    <div class="min-h-screen bg-gray-900 flex flex-row">
+        <div class="bg-gray-900 w-1/4 h-screen overflow-y-scroll">
+            <a href="/">
+                <h1 class="text-gray-100 text-xl font-semibold text-center my-5">
+                    <span class="text-blue-500">tailwind</span><span class="text-blue-300">Ui</span>Components
+                </h1>
+            </a>
+            <ul class="">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link active" href="alerts.html">Alerts</a></li>
+                <li><a class="nav-link" href="buttons.html">Buttons</a></li>
+            </ul>
+        </div>
+        <div class="bg-gray-800 text-gray-400 w-3/4 p-5 h-screen overflow-y-scroll">
+            <h1 class="text-2xl">Alerts</h1>
+
+            <h2 class="text-lg mt-6 mb-3">Regular</h2>
+            <div class="bg-blue-700 px-6 py-4 my-1 rounded-sm text-gray-400"><span class="font-bold">Notice!</span> Message saved!</div>
+            <div class="bg-green-700 px-6 py-4 my-1 rounded-sm text-gray-400"><span class="font-bold">Success!</span> Message sent!</div>
+            <div class="bg-orange-700 px-6 py-4 my-1 rounded-sm text-gray-400"><span class="font-bold">Warning!</span> Message truncated!</div>
+            <div class="bg-red-700 px-6 py-4 my-1 rounded-sm text-gray-400"><span class="font-bold">Danger!</span> Message delivery failed!</div>
+            <div class="bg-gray-900 px-6 py-4 my-1 rounded-sm text-gray-400"><span class="font-bold">Info!</span> Message saved in draft!</div>
+            <div class="bg-gray-300 px-6 py-4 my-1 rounded-sm text-gray-900"><span class="font-bold">Info!</span> Message saved in sent items!</div>
+
+<pre class="code">
+&lt;div class="bg-blue-700 px-6 py-4 my-1 rounded-sm text-gray-400"&gt;&lt;span class="font-bold">Notice!&lt;/span> Message saved!&lt;/div&gt;
+&lt;div class="bg-green-700 px-6 py-4 my-1 rounded-sm text-gray-400"&gt;&lt;span class="font-bold">Success!&lt;/span> Message sent!&lt;/div&gt;
+&lt;div class="bg-orange-700 px-6 py-4 my-1 rounded-sm text-gray-400"&gt;&lt;span class="font-bold">Warning!&lt;/span> Message truncated!&lt;/div&gt;
+&lt;div class="bg-red-700 px-6 py-4 my-1 rounded-sm text-gray-400"&gt;&lt;span class="font-bold">Danger!&lt;/span> Message delivery failed!&lt;/div&gt;
+&lt;div class="bg-gray-900 px-6 py-4 my-1 rounded-sm text-gray-400"&gt;&lt;span class="font-bold">Info!&lt;/span> Message saved in draft!&lt;/div&gt;
+&lt;div class="bg-gray-300 px-6 py-4 my-1 rounded-sm text-gray-900"&gt;&lt;span class="font-bold">Info!&lt;/span> Message saved in sent items!&lt;/div&gt;
+</pre>
+
+            <h2 class="text-lg mt-6 mb-3">Outline</h2>
+            <div class="border border-blue-700 px-6 py-4 my-1 rounded-sm text-blue-700"><span class="font-bold">Notice!</span> Message saved!</div>
+            <div class="border border-green-700 px-6 py-4 my-1 rounded-sm text-green-700"><span class="font-bold">Success!</span> Message sent!</div>
+            <div class="border border-orange-700 px-6 py-4 my-1 rounded-sm text-orange-700"><span class="font-bold">Warning!</span> Message truncated!</div>
+            <div class="border border-red-700 px-6 py-4 my-1 rounded-sm text-red-700"><span class="font-bold">Danger!</span> Message delivery failed!</div>
+            <div class="border border-gray-900 px-6 py-4 my-1 rounded-sm text-gray-900"><span class="font-bold">Info!</span> Message saved in draft!</div>
+            <div class="border border-gray-300 px-6 py-4 my-1 rounded-sm text-gray-300"><span class="font-bold">Info!</span> Message saved in sent items!</div>
+
+<pre class="code">
+&lt;div class="border border-blue-700 px-6 py-4 my-1 rounded-sm text-blue-700"&gt;&lt;span class="font-bold"&gt;Notice!&lt;/span&gt; Message saved!&lt;/div&gt;
+&lt;div class="border border-green-700 px-6 py-4 my-1 rounded-sm text-green-700"&gt;&lt;span class="font-bold"&gt;Success!&lt;/span&gt; Message sent!&lt;/div&gt;
+&lt;div class="border border-orange-700 px-6 py-4 my-1 rounded-sm text-orange-700"&gt;&lt;span class="font-bold"&gt;Warning!&lt;/span&gt; Message truncated!&lt;/div&gt;
+&lt;div class="border border-red-700 px-6 py-4 my-1 rounded-sm text-red-700"&gt;&lt;span class="font-bold"&gt;Danger!&lt;/span&gt; Message delivery failed!&lt;/div&gt;
+&lt;div class="border border-gray-900 px-6 py-4 my-1 rounded-sm text-gray-900"&gt;&lt;span class="font-bold"&gt;Info!&lt;/span&gt; Message saved in draft!&lt;/div&gt;
+&lt;div class="border border-gray-300 px-6 py-4 my-1 rounded-sm text-gray-300"&gt;&lt;span class="font-bold"&gt;Info!&lt;/span&gt; Message saved in sent items!&lt;/div&gt;
+</pre>
+
+            <h2 class="text-lg mt-6 mb-3">Rounded</h2>
+            <div class="bg-blue-700 px-6 py-4 my-1 rounded-full text-gray-400"><span class="font-bold">Notice!</span> Message saved!</div>
+            <div class="bg-green-700 px-6 py-4 my-1 rounded-full text-gray-400"><span class="font-bold">Success!</span> Message sent!</div>
+            <div class="bg-orange-700 px-6 py-4 my-1 rounded-full text-gray-400"><span class="font-bold">Warning!</span> Message truncated!</div>
+            <div class="bg-red-700 px-6 py-4 my-1 rounded-full text-gray-400"><span class="font-bold">Danger!</span> Message delivery failed!</div>
+            <div class="bg-gray-900 px-6 py-4 my-1 rounded-full text-gray-400"><span class="font-bold">Info!</span> Message saved in draft!</div>
+            <div class="bg-gray-300 px-6 py-4 my-1 rounded-full text-gray-900"><span class="font-bold">Info!</span> Message saved in sent items!</div>
+
+<pre class="code">
+&lt;div class="bg-blue-700 px-6 py-4 my-1 rounded-full text-gray-400"&gt;&lt;span class="font-bold">Notice!&lt;/span> Message saved!&lt;/div&gt;
+&lt;div class="bg-green-700 px-6 py-4 my-1 rounded-full text-gray-400"&gt;&lt;span class="font-bold">Success!&lt;/span> Message sent!&lt;/div&gt;
+&lt;div class="bg-orange-700 px-6 py-4 my-1 rounded-full text-gray-400"&gt;&lt;span class="font-bold">Warning!&lt;/span> Message truncated!&lt;/div&gt;
+&lt;div class="bg-red-700 px-6 py-4 my-1 rounded-full text-gray-400"&gt;&lt;span class="font-bold">Danger!&lt;/span> Message delivery failed!&lt;/div&gt;
+&lt;div class="bg-gray-900 px-6 py-4 my-1 rounded-full text-gray-400"&gt;&lt;span class="font-bold">Info!&lt;/span> Message saved in draft!&lt;/div&gt;
+&lt;div class="bg-gray-300 px-6 py-4 my-1 rounded-full text-gray-900"&gt;&lt;span class="font-bold">Info!&lt;/span> Message saved in sent items!&lt;/div&gt;
+</pre>
+
+            <h2 class="text-lg mt-6 mb-3">Outline</h2>
+            <div class="border border-blue-700 px-6 py-4 my-1 rounded-full text-blue-700"><span class="font-bold">Notice!</span> Message saved!</div>
+            <div class="border border-green-700 px-6 py-4 my-1 rounded-full text-green-700"><span class="font-bold">Success!</span> Message sent!</div>
+            <div class="border border-orange-700 px-6 py-4 my-1 rounded-full text-orange-700"><span class="font-bold">Warning!</span> Message truncated!</div>
+            <div class="border border-red-700 px-6 py-4 my-1 rounded-full text-red-700"><span class="font-bold">Danger!</span> Message delivery failed!</div>
+            <div class="border border-gray-900 px-6 py-4 my-1 rounded-full text-gray-900"><span class="font-bold">Info!</span> Message saved in draft!</div>
+            <div class="border border-gray-300 px-6 py-4 my-1 rounded-full text-gray-300"><span class="font-bold">Info!</span> Message saved in sent items!</div>
+
+<pre class="code">
+&lt;div class="border border-blue-700 px-6 py-4 my-1 rounded-full text-blue-700"&gt;&lt;span class="font-bold"&gt;Notice!&lt;/span&gt; Message saved!&lt;/div&gt;
+&lt;div class="border border-green-700 px-6 py-4 my-1 rounded-full text-green-700"&gt;&lt;span class="font-bold"&gt;Success!&lt;/span&gt; Message sent!&lt;/div&gt;
+&lt;div class="border border-orange-700 px-6 py-4 my-1 rounded-full text-orange-700"&gt;&lt;span class="font-bold"&gt;Warning!&lt;/span&gt; Message truncated!&lt;/div&gt;
+&lt;div class="border border-red-700 px-6 py-4 my-1 rounded-full text-red-700"&gt;&lt;span class="font-bold"&gt;Danger!&lt;/span&gt; Message delivery failed!&lt;/div&gt;
+&lt;div class="border border-gray-900 px-6 py-4 my-1 rounded-full text-gray-900"&gt;&lt;span class="font-bold"&gt;Info!&lt;/span&gt; Message saved in draft!&lt;/div&gt;
+&lt;div class="border border-gray-300 px-6 py-4 my-1 rounded-full text-gray-300"&gt;&lt;span class="font-bold"&gt;Info!&lt;/span&gt; Message saved in sent items!&lt;/div&gt;
+</pre>
+        </div>
+    </div>
+</body>
+
+</html>
