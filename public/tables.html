@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindUiComponents ― Tables</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="">
+    <div class="min-h-screen bg-gray-900 flex flex-row">
+        <div class="bg-gray-900 w-1/4 h-screen overflow-y-scroll">
+            <a href="/">
+                <h1 class="text-gray-100 text-xl font-semibold text-center my-5">
+                    <span class="text-blue-500">tailwind</span><span class="text-blue-300">Ui</span>Components
+                </h1>
+            </a>
+            <ul class="">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="alerts.html">Alerts</a></li>
+                <li><a class="nav-link" href="buttons.html">Buttons</a></li>
+                <li><a class="nav-link active" href="tables.html">Tables</a></li>
+            </ul>
+        </div>
+        <div class="bg-gray-800 text-gray-400 w-3/4 p-5 h-screen overflow-y-scroll">
+            <h1 class="text-2xl">Tables</h1>
+
+            <h2 class="text-lg mt-6 mb-3">Light (Based on <a class="underline" target="_blank" href="https://tailwindui.com/components/application-ui/lists/tables">tailwindui.com</a>)</h2>
+            <div class="overflow-x-auto">
+                <div class="py-2 align-middle inline-block min-w-full">
+                    <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-200">
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Name
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Title
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Status
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Role
+                                    </th>
+                                    <th class="px-6 py-3 bg-gray-50"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60"
+                                                    alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm leading-5 font-medium text-gray-900">
+                                                    Jane Cooper
+                                                </div>
+                                                <div class="text-sm leading-5 text-gray-500">
+                                                    jane.cooper@example.com
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <div class="text-sm leading-5 text-gray-900">Regional Paradigm Technician
+                                        </div>
+                                        <div class="text-sm leading-5 text-gray-500">Optimization</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                        Admin
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+<pre class="code">
+&lt;div class="overflow-x-auto"&gt;
+    &lt;div class="py-2 align-middle inline-block min-w-full"&gt;
+        &lt;div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"&gt;
+            &lt;table class="min-w-full divide-y divide-gray-200"&gt;
+                &lt;thead class="bg-gray-200"&gt;
+                    &lt;tr&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"&gt;
+                            Name
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"&gt;
+                            Title
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"&gt;
+                            Status
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"&gt;
+                            Role
+                        &lt;/th&gt;
+                        &lt;th class="px-6 py-3 bg-gray-50"&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody class="bg-white divide-y divide-gray-200"&gt;
+                    &lt;tr&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;div class="flex items-center"&gt;
+                                &lt;div class="flex-shrink-0 h-10 w-10"&gt;
+                                    &lt;img class="h-10 w-10 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60"
+                                        alt=""&gt;
+                                &lt;/div&gt;
+                                &lt;div class="ml-4"&gt;
+                                    &lt;div class="text-sm leading-5 font-medium text-gray-900"&gt;
+                                        Jane Cooper
+                                    &lt;/div&gt;
+                                    &lt;div class="text-sm leading-5 text-gray-500"&gt;
+                                        jane.cooper@example.com
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;div class="text-sm leading-5 text-gray-900"&gt;Regional Paradigm Technician
+                            &lt;/div&gt;
+                            &lt;div class="text-sm leading-5 text-gray-500"&gt;Optimization&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;span
+                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"&gt;
+                                Active
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"&gt;
+                            Admin
+                        &lt;/td&gt;
+                        &lt;td
+                            class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"&gt;
+                            &lt;a href="#" class="text-indigo-600 hover:text-indigo-900"&gt;Edit&lt;/a&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+            <h2 class="text-lg mt-6 mb-3">Dark (Based on <a class="underline" target="_blank" href="https://tailwindui.com/components/application-ui/lists/tables">tailwindui.com</a>)</h2>
+            <div class="overflow-x-auto">
+                <div class="py-2 align-middle inline-block min-w-full">
+                    <div class="shadow overflow-hidden border-b border-gray-900 sm:rounded-lg">
+                        <table class="min-w-full divide-y divide-gray-900">
+                            <thead class="bg-gray-800">
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider">
+                                        Name
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider">
+                                        Title
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider">
+                                        Status
+                                    </th>
+                                    <th
+                                        class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider">
+                                        Role
+                                    </th>
+                                    <th class="px-6 py-3 bg-gray-50"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-gray-900 divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60"
+                                                    alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm leading-5 font-medium text-gray-200">
+                                                    Jane Cooper
+                                                </div>
+                                                <div class="text-sm leading-5 text-gray-500">
+                                                    jane.cooper@example.com
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <div class="text-sm leading-5 text-gray-200">Regional Paradigm Technician
+                                        </div>
+                                        <div class="text-sm leading-5 text-gray-500">Optimization</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-700 text-green-100">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                        Admin
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                                        <a href="#" class="text-gray-600 hover:text-gray-500">Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+<pre class="code">
+&lt;div class="overflow-x-auto"&gt;
+    &lt;div class="py-2 align-middle inline-block min-w-full"&gt;
+        &lt;div class="shadow overflow-hidden border-b border-gray-900 sm:rounded-lg"&gt;
+            &lt;table class="min-w-full divide-y divide-gray-900"&gt;
+                &lt;thead class="bg-gray-800"&gt;
+                    &lt;tr&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider"&gt;
+                            Name
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider"&gt;
+                            Title
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider"&gt;
+                            Status
+                        &lt;/th&gt;
+                        &lt;th
+                            class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-400 uppercase tracking-wider"&gt;
+                            Role
+                        &lt;/th&gt;
+                        &lt;th class="px-6 py-3 bg-gray-50"&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody class="bg-gray-900 divide-y divide-gray-200"&gt;
+                    &lt;tr&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;div class="flex items-center"&gt;
+                                &lt;div class="flex-shrink-0 h-10 w-10"&gt;
+                                    &lt;img class="h-10 w-10 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60"
+                                        alt=""&gt;
+                                &lt;/div&gt;
+                                &lt;div class="ml-4"&gt;
+                                    &lt;div class="text-sm leading-5 font-medium text-gray-200"&gt;
+                                        Jane Cooper
+                                    &lt;/div&gt;
+                                    &lt;div class="text-sm leading-5 text-gray-500"&gt;
+                                        jane.cooper@example.com
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;div class="text-sm leading-5 text-gray-200"&gt;Regional Paradigm Technician
+                            &lt;/div&gt;
+                            &lt;div class="text-sm leading-5 text-gray-500"&gt;Optimization&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap"&gt;
+                            &lt;span
+                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-700 text-green-100"&gt;
+                                Active
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"&gt;
+                            Admin
+                        &lt;/td&gt;
+                        &lt;td
+                            class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium"&gt;
+                            &lt;a href="#" class="text-gray-600 hover:text-gray-500"&gt;Edit&lt;/a&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        </div>
+    </div>
+</body>
+
+</html>
